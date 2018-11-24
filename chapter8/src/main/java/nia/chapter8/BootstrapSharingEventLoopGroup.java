@@ -29,7 +29,6 @@ public class BootstrapSharingEventLoopGroup {
         .channel(NioServerSocketChannel.class)
         .childHandler(new SimpleChannelInboundHandler<ByteBuf>() {
           ChannelFuture connectFuture;
-
           @Override
           public void channelActive(ChannelHandlerContext ctx) throws Exception {
 //            创建Bootstrap类的实例以连接到远程主机
