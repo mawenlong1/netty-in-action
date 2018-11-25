@@ -9,11 +9,11 @@ import io.netty.handler.codec.MessageToByteEncoder;
  * @date 2018/09/22
  */
 public class CharToByteEncoder extends
-    MessageToByteEncoder<Character> {
+        MessageToByteEncoder<Character> {
 
-  @Override
-  public void encode(ChannelHandlerContext ctx, Character msg,
-      ByteBuf out) throws Exception {
-    out.writeChar(msg);
-  }
+    @Override
+    public void encode(ChannelHandlerContext ctx, Character msg,
+                       ByteBuf out) throws Exception {
+        out.writeChar(msg);
+    }
 }
